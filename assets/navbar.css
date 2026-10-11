@@ -1,0 +1,63 @@
+
+
+/* NAVBAR STYLING */
+.navbar {
+  backdrop-filter: blur(10px);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* BRAND LOGO ANIMATION */
+.navbar-brand {
+  font-weight: 800;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #38bdf8;
+}
+
+
+body.dark-mode .navbar .nav-link:hover {
+  color: #a78bfa; /* Changed hover/active color */
+}
+
+
+.blob-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.3), rgba(232, 121, 249, 0.3));
+    animation-delay: -5s;
+}
+
+body.light-mode .blob-1 {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2));
+}
+
+body.light-mode .blob-2 {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(232, 121, 249, 0.2));
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* navbar css end */

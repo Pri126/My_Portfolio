@@ -1,0 +1,73 @@
+/* ===== Scroll reveal animations ===== */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.from-left{transform:translateX(-50px)}
+.reveal.from-right{transform:translateX(50px)}
+.reveal.zoom{transform:scale(.9)}
+.reveal.visible{opacity:1;transform:none}
+
+/* ===== Smooth scroll + sticky navbar offset ===== */
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:70px}
+
+/* ===== Nav link hover / active ===== */
+.navbar .nav-link{position:relative;transition:color .3s}
+.navbar .nav-link::after{content:"";position:absolute;left:8px;right:8px;bottom:2px;height:2px;background:#38bdf8;transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.navbar .nav-link:hover::after,.navbar .nav-link.active::after{transform:scaleX(1)}
+.navbar .nav-link.active,.navbar .nav-link:hover{color:#38bdf8 !important}
+
+/* ===== Hero small animations ===== */
+.hero-image-large img{animation:floatY 4s ease-in-out infinite}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero-buttons .btn{transition:transform .3s,box-shadow .3s}
+.hero-buttons .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(56,189,248,.35)}
+
+/* ===== Cards hover ===== */
+.tech-card,.tech-box,.skill-item-resume,.timeline-content-resume{transition:transform .35s ease,box-shadow .35s ease}
+.tech-card:hover,.tech-box:hover{transform:translateY(-8px);box-shadow:0 12px 28px rgba(56,189,248,.25)}
+.skill-item-resume:hover{transform:translateX(6px)}
+.timeline-content-resume:hover{transform:translateX(6px)}
+
+/* ===== Skill bars: animated fill ===== */
+.skill-fill,.skill-fill-resume{transition:width 1.4s cubic-bezier(.22,1,.36,1)}
+
+/* ===== Tools boxes ===== */
+.tool-box{text-align:center}
+.tool-box .tool-sub{display:block;margin-top:6px;font-size:13px;opacity:.75}
+
+/* ===== Project cards + hover buttons ===== */
+.project-card{position:relative;overflow:hidden;border-radius:12px;transition:transform .4s ease,box-shadow .4s ease}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(56,189,248,.3)}
+.project-card .screenshot-link{display:block;overflow:hidden;border-radius:10px}
+.project-card .screenshot-link img{transition:transform .5s ease,filter .4s ease}
+.project-card:hover .screenshot-link img{transform:scale(1.08);filter:brightness(.45)}
+
+.project-overlay{position:absolute;top:0;left:0;right:0;height:200px;display:flex;align-items:center;justify-content:center;gap:12px;opacity:0;transition:opacity .35s ease;pointer-events:none}
+.project-card:hover .project-overlay{opacity:1}
+.proj-btn{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:50px;background:#38bdf8;color:#0f172a !important;font-size:14px;font-weight:600;text-decoration:none;border:2px solid #38bdf8;transform:translateY(15px);transition:transform .35s ease,background .3s,color .3s}
+.project-card:hover .proj-btn{transform:translateY(0)}
+.project-card:hover .proj-btn:nth-child(2){transition-delay:.08s}
+.proj-btn:hover{background:#fff;border-color:#fff}
+.proj-btn-outline{background:transparent;color:#fff !important;border-color:#fff}
+.proj-btn-outline:hover{background:#38bdf8;border-color:#38bdf8;color:#0f172a !important}
+
+/* touch devices have no hover: always show the buttons */
+@media (hover:none){
+  .project-overlay{opacity:1;position:static;height:auto;padding:10px 0}
+  .proj-btn{transform:none}
+  .project-card:hover .screenshot-link img{filter:none;transform:none}
+}
+
+/* ===== Respect reduced motion ===== */
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-image-large img{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ===== Remove extra empty space below the footer ===== */
+html,body{height:auto !important;min-height:0 !important;margin-bottom:0 !important;padding-bottom:0 !important}
+body{overflow-x:hidden}
+/* floating background blobs must not stretch the page height */
+.blob{position:fixed !important;pointer-events:none;z-index:-1}
+footer{margin-bottom:0 !important;padding-bottom:0 !important}
+footer .footer-container{margin-bottom:0 !important}

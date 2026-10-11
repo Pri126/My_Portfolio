@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/index.css">
+  <link rel="stylesheet" href="assets/navbar.css">
+  <link rel="stylesheet" href="assets/footer.css">
+  <link rel="stylesheet" href="assets/about.css">
+  <link rel="stylesheet" href="assets/cv.css">
+  <link rel="stylesheet" href="assets/projects.css">
+  <link rel="stylesheet" href="assets/extras.css">
+
+</head>
+<body class="dark-mode cv-body">
+    <!-- Floating Animated Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <!-- HEADER / NAVBAR START-->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- BRAND LOGO -->
+             <a class="navbar-brand display-1" href="#home">Porfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#about" style="color: #38bdf8;">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+            </ul>
+
+            <!-- Dark/Light Mode Toggle -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER / NAVBAR END-->
+
+    <!-- HOME SECTION START-->
+    
+   <section id="home">
+      <div class="container-fluid">
+        <section class="hero">
+          <div class="hero-content">
+            <!-- LEFT: Text + Buttons -->
+            <div class="hero-text">
+              <div class="display-1 text-warning">Hi, <span style="color:#38bdf8">I'm Priya Devi</span></div>
+              <h2 style="color:rgb(255, 208, 0)">Passionate <span class="changing-text"></span></h2>
+              <p>"A dedicated Junoir frontend developer on an exciting journey through a comprehensive 3-year development program. I've successfully completed my first semester. I have worked on a project using HTML, CSS, JavaScript, Bootstrap, PHP,and MySQL. I enjoy learning new technologies and improving my coding skills through practice."</p>
+              
+              <div class="hero-buttons">
+                <a href="#project" class="btn rounded-pill">View My Work</a>
+                <a href="https://github.com" target="_blank" class="btn btn-outline rounded-pill">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: Large Image with Space -->
+            <div class="hero-image-large">
+              <img src="images/mypic.png" alt="Priya Devi - Profile">
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+  <!--about section start  -->
+<section id="about">
+      <div class="container">
+            <h1 class="about-title" style="margin-bottom: -30px; margin-top: 80px;"> About <span style="color:blueviolet;"> Me </span> </h1>
+      </div>
+        <section class="hero">
+          <div class="hero-content">
+            <!-- LEFT: Text + Buttons -->
+            <div class="hero-text">
+              <div class="row">
+                <div class="col-4">
+                  <div class="about-circle-img" style="text-align: center;">
+                    <img src="images/mypic.png" alt="Priya Devi" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8;">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="about-content-right">
+                    <div class="display-1 text-warning">Priya<span style="color:#38bdf8">Devi</span></div>
+                    <h2 style="color:rgb(255, 208, 0)"> Fresher Full Stack Developer</h2>
+                    <p>I am a passionate and dedicated web developer with a strong interest in creating modern, responsive, and user-friendly websites. I enjoy turning ideas into real digital experiences using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL. I am always eager to learn new technologies and improve my skills to build better and more efficient web solutions. My goal is to grow as a full-stack developer and contribute to meaningful projects that solve real-world problems while continuously improving my expertise in web development.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+ 
+   
+
+ <!-- cards section -->
+<section class="cards-section my-5">
+
+  <div class="container">
+   
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="tech-card">
+         
+
+          <div class="tech-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+
+          <h3 class="tech-title">Front Dev</h3>
+
+          <p class="tech-desc">
+            HTML is used to create the structure of modern websites and web pages.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="tech-card">
+
+          <div class="tech-icon">
+            <i class="bi bi-palette"></i>
+          </div>
+
+          <h3 class="tech-title">UI/UX Design</h3>
+
+          <p class="tech-desc">
+            CSS is used to design beautiful, responsive and attractive websites.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="tech-card">
+
+          <div class="tech-icon">
+            <i class="bi bi-phone"></i>
+          </div>
+
+          <h3 class="tech-title">Mobile Freindly</h3>
+
+          <p class="tech-desc">
+            Bootstrap helps create responsive and mobile-friendly websites quickly.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+      <!-- skills -->
+      <section class="skills">
+          <h2>MY <span>SKILLS</span></h2>
+          <div class="skills-boxes-container">
+              <!-- FRONTEND TECHNOLOGIES -->
+              <div class="skill-category">
+                  <h3><i class="fas fa-laptop-code"></i> Frontend Technologies</h3>
+                  <div class="tech-boxes">
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-html5"></i>
+                          </div>
+                          <h4>HTML5</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 85%"></div>
+                          </div>
+                          <span class="skill-percent">85%</span>
+                      </div>
+                      
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-css3-alt"></i>
+                          </div>
+                          <h4>CSS3</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 80%"></div>
+                          </div>
+                          <span class="skill-percent">80%</span>
+                      </div>
+
+                       <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-css3-alt"></i>
+                          </div>
+                          <h4>Tailwind CSS</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 80%"></div>
+                          </div>
+                          <span class="skill-percent">80%</span>
+                      </div>
+                      
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-js"></i>
+                          </div>
+                          <h4>JavaScript</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 50%"></div>
+                          </div>
+                          <span class="skill-percent">50%</span>
+                      </div>
+                      
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-bootstrap"></i>
+                          </div>
+                          <h4>Bootstrap 5</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 90%"></div>
+                          </div>
+                          <span class="skill-percent">90%</span>
+                      </div>
+                      
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fas fa-search"></i>
+                          </div>
+                          <h4>SEO Best Practices</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 56%"></div>
+                          </div>
+                          <span class="skill-percent">56%</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- BACKEND TECHNOLOGIES -->
+              <div class="skill-category">
+                  <h3><i class="fas fa-server"></i> Backend Technologies</h3>
+                  <div class="tech-boxes">
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-php"></i>
+                          </div>
+                          <h4>PHP</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 50%"></div>
+                          </div>
+                          <span class="skill-percent">50%</span>
+                      </div>
+                      
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fab fa-laravel"></i>
+                          </div>
+                          <h4>Laravel</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 50%"></div>
+                          </div>
+                          <span class="skill-percent">50%</span>
+                      </div>
+                      
+                      
+                      
+                  </div>
+              </div>
+
+              <!-- DATABASES -->
+              <div class="skill-category">
+                  <h3><i class="fas fa-database"></i> Databases</h3>
+                  <div class="tech-boxes">
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fas fa-database"></i>
+                          </div>
+                          <h4>MySQL</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 80%"></div>
+                          </div>
+                          <span class="skill-percent">80%</span>
+                      </div>
+
+                      <div class="tech-box">
+                          <div class="tech-icon">
+                              <i class="fas fa-server"></i>
+                          </div>
+                          <h4>SQL Server</h4>
+                          <div class="skill-bar">
+                              <div class="skill-fill" style="width: 60%"></div>
+                          </div>
+                          <span class="skill-percent">60%</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- TOOLS -->
+              <div class="skill-category">
+                  <h3><i class="fas fa-tools"></i> Tools</h3>
+                  <div class="tech-boxes">
+                      <div class="tech-box tool-box">
+                          <div class="tech-icon"><i class="fas fa-code"></i></div>
+                          <h4>VS Code</h4>
+                          <span class="tool-sub">Visual Studio Code</span>
+                      </div>
+                      <div class="tech-box tool-box">
+                          <div class="tech-icon"><i class="fab fa-microsoft"></i></div>
+                          <h4>Visual Studio</h4>
+                          <span class="tool-sub">Microsoft IDE</span>
+                      </div>
+                      <div class="tech-box tool-box">
+                          <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                          <h4>Git</h4>
+                          <span class="tool-sub">Version Control</span>
+                      </div>
+                      <div class="tech-box tool-box">
+                          <div class="tech-icon"><i class="fab fa-github"></i></div>
+                          <h4>GitHub</h4>
+                          <span class="tool-sub">Code Hosting</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- RESUME/CV SECTION -->
+      <section id="resume" class="resume-section">
+          <div class="container">
+              <h2 class="section-title text-center">My <span>Resume</span></h2>
+              
+              <!-- Two Column Layout -->
+              <div class="resume-content">
+                  <!-- Left Column: Education & Experience -->
+                  <div class="resume-column">
+                      <!-- Education Section -->
+                      <div class="resume-section education-resume">
+                          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                          <div class="timeline-resume">
+                              <div class="timeline-item-resume">
+                                  <div class="timeline-dot-resume"></div>
+                                  <div class="timeline-content-resume">
+                                      <div class="timeline-date-resume">Currently (3-Year Program)</div>
+                                      <h4>Advanced Diploma in Software Engineering</h4>
+                                      <p class="institution-resume">Aptech, Shahrah-e-Faisal, Karachi</p>
+                                  </div>
+                              </div>
+                              
+                              <div class="timeline-item-resume">
+                                  <div class="timeline-dot-resume"></div>
+                                  <div class="timeline-content-resume">
+                                      <div class="timeline-date-resume">2019-2021</div>
+                                      <h4>Bachelor of Arts (BA)</h4>
+                                      <p class="institution-resume">Government College</p>
+                                  </div>
+                              </div>
+                              
+                              <div class="timeline-item-resume">
+                                  <div class="timeline-dot-resume"></div>
+                                  <div class="timeline-content-resume">
+                                      <div class="timeline-date-resume">2017-2019</div>
+                                      <h4>Intermediate (Pre-Medical)</h4>
+                                      <p class="institution-resume">Medical Girls College</p>
+                                  </div>
+                              </div>
+                              
+                              <div class="timeline-item-resume">
+                                  <div class="timeline-dot-resume"></div>
+                                  <div class="timeline-content-resume">
+                                      <div class="timeline-date-resume">2015-2016</div>
+                                      <h4>Matriculation</h4>
+                                      <p class="institution-resume">Board of Secondary Education</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Work Experience Section -->
+                      <div class="resume-section experience-resume">
+                          <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                          <div class="fresher-notice">
+                              <div class="fresher-icon">
+                                  <i class="fas fa-user-graduate"></i>
+                              </div>
+                              <h4>Fresher</h4>
+                              <p>Passionate frontend developer eager to apply technical skills and create innovative web solutions.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Right Column: Skills -->
+                  <div class="resume-column">
+                      <div class="resume-section skills-resume">
+                          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                          <div class="skills-grid-resume">
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-html5"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>HTML5</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 85%"></div>
+                                          </div>
+                                          <span>85%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-css3-alt"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>CSS3</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 80%"></div>
+                                          </div>
+                                          <span>80%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-js"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>JavaScript</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 50%"></div>
+                                          </div>
+                                            <span>50%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-bootstrap"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>Bootstrap 5</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 90%"></div>
+                                          </div>
+                                          <span>90%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-php"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>PHP</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 50%"></div>
+                                          </div>
+                                          <span>50%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fab fa-laravel"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>Laravel</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 50%"></div>
+                                          </div>
+                                          <span>50%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fas fa-database"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>MySQL</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 80%"></div>
+                                          </div>
+                                          <span>80%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="skill-item-resume">
+                                  <div class="skill-icon-resume">
+                                      <i class="fas fa-server"></i>
+                                  </div>
+                                  <div class="skill-info-resume">
+                                      <h4>SQL Server</h4>
+                                      <div class="skill-level">
+                                          <div class="skill-bar-resume">
+                                              <div class="skill-fill-resume" style="width: 60%"></div>
+                                          </div>
+                                          <span>60%</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+<!-- my projects section -->
+<section id="project">
+      <div class="container">
+        <h2 class="text-center text-white mb-4">My <span style="color: #38bdf8;">Projects</span></h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Project: Alpha Vision AI ERP & POS -->
+          <div class="gallery-item project-card">
+            <a href="images/erp_dashboard.png" data-lightbox="gallery" class="screenshot-link">
+              <img src="images/erp_dashboard.png" alt="Alpha Vision AI ERP &amp; POS Dashboard" style="width: 100%; height: 200px; object-fit: cover; object-position: top left; border-radius: 10px; border: 2px solid #38bdf8; transition: transform 0.3s ease;">
+            </a>
+            <div class="project-overlay">
+              <a href="https://your-live-demo-link.com" target="_blank" rel="noopener" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+              <a href="https://github.com/Pri126/erp_system" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> View GitHub</a>
+            </div>
+            <div class="gallery-detail">
+              <h4>Alpha Vision AI &ndash; ERP &amp; POS System</h4>
+              <p>A complete business management system built with PHP and MySQL for retail shops. It has a secure admin login and a live dashboard showing today's sales, monthly sales, low-stock alerts, customers, products and khata (credit) dues. Main modules include POS billing with barcode labels, product and inventory management, customer khata ledger, suppliers and purchase orders, cash management, staff, attendance and payroll, returns, reports, and an AI Insights page.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Project: Cinevo Movie Booking System -->
+          <div class="gallery-item project-card">
+            <a href="images/movie_booking.png" data-lightbox="gallery" class="screenshot-link">
+              <img src="images/movie_booking.png" alt="Cinevo Movie Booking System Home Page" style="width: 100%; height: 200px; object-fit: cover; object-position: top left; border-radius: 10px; border: 2px solid #38bdf8; transition: transform 0.3s ease;">
+            </a>
+            <div class="project-overlay">
+              <a href="https://your-live-demo-link.com" target="_blank" rel="noopener" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+              <a href="https://github.com/Pri126/movie_booking_system" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> View GitHub</a>
+            </div>
+            <div class="gallery-detail">
+              <h4>Cinevo &ndash; Movie Booking System</h4>
+              <p>An online movie ticket booking website built with PHP and MySQL. Users can register, log in, reset a forgotten password by email, browse and filter movies (all, now showing, upcoming), open a movie details page with reviews, choose seats for a show and see their bookings. A full admin panel lets the admin manage movies, categories, theaters, shows, seat classes and pricing, users and reviews, and view revenue reports.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Project: Campus Coin -->
+          <div class="gallery-item project-card">
+            <a href="images/campus_coin.png" data-lightbox="gallery" class="screenshot-link">
+              <img src="images/campus_coin.png" alt="Campus Coin Home Page" style="width: 100%; height: 200px; object-fit: cover; object-position: top left; border-radius: 10px; border: 2px solid #38bdf8; transition: transform 0.3s ease;">
+            </a>
+            <div class="project-overlay">
+              <a href="https://your-live-demo-link.com" target="_blank" rel="noopener" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+              <a href="https://github.com/Pri126/campus_coin" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> View GitHub</a>
+            </div>
+            <div class="gallery-detail">
+              <h4>Campus Coin &ndash; Student Finance Tracker</h4>
+              <p>A student expense management web app built with Laravel and MySQL. Students can sign up with email OTP verification, record daily expenses and income, set category budgets with alerts, schedule recurring transactions, get monthly insights and smart saving tips, and export reports as PDF. A separate admin panel manages users, categories and announcements, and shows analytics.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- LIGHTBOX FUNCTIONALITY -->
+  <script>
+    // Lightbox functionality for screenshot gallery
+    function initLightbox() {
+      const lightboxLinks = document.querySelectorAll('[data-lightbox="gallery"]');
+      const lightbox = document.createElement('div');
+      
+      // Create lightbox structure
+      lightbox.className = 'lightbox';
+      lightbox.innerHTML = `
+        <div class="lightbox-content">
+          <img src="" alt="" style="max-width: 90%; max-height: 90vh; object-fit: contain;">
+          <button class="lightbox-close">&times;</button>
+        </div>
+      `;
+      
+      // Add to body
+      document.body.appendChild(lightbox);
+      
+      // Handle clicks
+      lightboxLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const img = link.querySelector('img');
+          const lightboxImg = lightbox.querySelector('img');
+          
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          
+          lightbox.style.display = 'flex';
+        });
+      });
+      
+      // Handle close button
+      lightbox.addEventListener('click', function(e) {
+        if (e.target.classList.contains('lightbox-close')) {
+          lightbox.style.display = 'none';
+        }
+      });
+      
+      // Handle background click
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+          lightbox.style.display = 'none';
+        }
+      });
+    }
+    
+    // Initialize lightbox on page load
+    document.addEventListener('DOMContentLoaded', initLightbox);
+  </script>
+  
+
+
+     <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Priya Devi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  
+  <!-- CUSTOM JS -->
+  <script src="js/index.js"></script>
+  <script src="js/extras.js"></script>
+</body>
+</html>

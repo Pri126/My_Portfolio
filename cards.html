@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daraz Style Cards</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      padding:20px;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:8px;
+    }
+
+    .card{
+      background:white;
+      border-radius:6px;
+      overflow:hidden;
+      transition:0.3s;
+      cursor:pointer;
+      position:relative;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:10px;
+    }
+
+    .title{
+      font-size:14px;
+      height:40px;
+      overflow:hidden;
+      margin-bottom:8px;
+    }
+
+    .price{
+      color:#f57224;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .old-price{
+      text-decoration:line-through;
+      color:gray;
+      font-size:13px;
+      margin-left:5px;
+    }
+
+    .discount{
+      font-size:12px;
+      color:green;
+      margin-top:5px;
+    }
+
+    .wishlist{
+      position:absolute;
+      top:10px;
+      right:10px;
+      background:white;
+      width:35px;
+      height:35px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .active{
+      color:red;
+    }
+
+    @media(max-width:900px){
+      .products{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:500px){
+      .products{
+        grid-template-columns:repeat(1,1fr);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="products">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Stylish Casual T-Shirt For Men
+        </div>
+
+        <div>
+          <span class="price">$20</span>
+          <span class="old-price">$35</span>
+        </div>
+
+        <div class="discount">-30% OFF</div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Smart Watch New Edition
+        </div>
+
+        <div>
+          <span class="price">$60</span>
+          <span class="old-price">$90</span>
+        </div>
+
+        <div class="discount">-15% OFF</div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Beautiful Hand Bag For Girls
+        </div>
+
+        <div>
+          <span class="price">$35</span>
+          <span class="old-price">$50</span>
+        </div>
+
+        <div class="discount">-25% OFF</div>
+      </div>
+    </div>
+
+  </div>
+
+   <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="card">
+      <div class="wishlist">♡</div>
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="">
+
+      <div class="content">
+        <div class="title">
+          Trending Sports Shoes
+        </div>
+
+        <div>
+          <span class="price">$45</span>
+          <span class="old-price">$70</span>
+        </div>
+
+        <div class="discount">-20% OFF</div>
+      </div>
+    </div>
+
+  <script>
+
+    let wishlist = document.querySelectorAll(".wishlist");
+
+    wishlist.forEach((heart)=>{
+      heart.addEventListener("click", ()=>{
+
+        if(heart.innerHTML == "♡"){
+          heart.innerHTML = "♥";
+          heart.classList.add("active");
+        }
+        else{
+          heart.innerHTML = "♡";
+          heart.classList.remove("active");
+        }
+
+      });
+    });
+
+  </script>
+
+</body>
+</html>
